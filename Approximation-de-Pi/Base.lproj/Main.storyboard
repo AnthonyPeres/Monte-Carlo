@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Approximation_de_Pi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-3c-Pqh" customClass="PiView" customModule="Approximation_de_Pi">
+                                <rect key="frame" x="60" y="226" width="295" height="295"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="bo5-IC-2ZM"/>
+                                    <constraint firstAttribute="height" constant="295" id="wbe-lS-fo3"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-Gi-EE3">
+                                <rect key="frame" x="70" y="594" width="286" height="188"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-4e-aBo">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Nombre de points : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDM-a3-qwa">
+                                                <rect key="frame" x="0.0" y="0.0" width="208.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAo-BS-dIa">
+                                                <rect key="frame" x="237.5" y="0.0" width="48.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HAo-BS-dIa" firstAttribute="leading" secondItem="JDM-a3-qwa" secondAttribute="trailing" constant="29" id="EcB-3c-e8F"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15000" minValue="10000" maxValue="50000" translatesAutoresizingMaskIntoConstraints="NO" id="x1a-Mp-qQN">
+                                        <rect key="frame" x="-2" y="54.5" width="290" height="26"/>
+                                        <connections>
+                                            <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="9DJ-Sy-cN7"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valeur approchée de π : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-ST-OI6">
+                                        <rect key="frame" x="0.0" y="108.5" width="286" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-ek-PK4">
+                                        <rect key="frame" x="0.0" y="163" width="286" height="25"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Calcul"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="dMP-wm-kFY"/>
+                                    <constraint firstItem="9bu-ek-PK4" firstAttribute="centerX" secondItem="nNQ-Gi-EE3" secondAttribute="centerX" id="erc-p3-dn9"/>
+                                    <constraint firstAttribute="width" constant="286" id="o8O-iY-XEN"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcul de la valeur approchée de π" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvA-mZ-WTO">
+                                <rect key="frame" x="60" y="150" width="295" height="22"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nNQ-Gi-EE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="4RO-Wx-9uv"/>
+                            <constraint firstItem="W0T-3c-Pqh" firstAttribute="top" secondItem="dvA-mZ-WTO" secondAttribute="bottom" constant="54" id="7wu-XD-o8q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvA-mZ-WTO" secondAttribute="trailing" constant="59" id="B5o-ph-V6L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nNQ-Gi-EE3" secondAttribute="bottom" constant="80" id="LsQ-Wv-rHb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nNQ-Gi-EE3" secondAttribute="trailing" constant="58" id="Urr-Yl-CJd"/>
+                            <constraint firstItem="dvA-mZ-WTO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="buj-sK-eMP"/>
+                            <constraint firstItem="dvA-mZ-WTO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="bvg-a5-lL3"/>
+                            <constraint firstItem="W0T-3c-Pqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="gxY-Ci-2A1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0T-3c-Pqh" secondAttribute="trailing" constant="59" id="yIm-Wu-14M"/>
+                            <constraint firstItem="nNQ-Gi-EE3" firstAttribute="top" secondItem="W0T-3c-Pqh" secondAttribute="bottom" constant="73" id="zIN-ob-Uw1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="HAo-BS-dIa" id="nD8-ya-9Xk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
