@@ -7,16 +7,15 @@ On stock les données dans un fichier .plist et on utilise aussi le UserDefault
 
 ### iPhone
 
-<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone1.png" height="400"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone1.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone2.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone3.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone4.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone5.png" height="500"/>
 
-![Screenshot](./Screenshot/iPhone 1.png)
-![Screenshot](./Screenshot/iPhone 2.png)
-![Screenshot](./Screenshot/iPhone 3.png)
-![Screenshot](./Screenshot/iPhone 4.png)
-![Screenshot](./Screenshot/iPhone 5.png)
 
 ### iPad
 
-![Screenshot](./Screenshot/iPad 1.png)
-![Screenshot](./Screenshot/iPad 2.png)
-![Screenshot](./Screenshot/iPad 3.png)
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPad1.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPad2.png" height="500"/>
+<img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPad3.png" height="500"/>
