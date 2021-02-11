@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I6T-iG-MFN">
-    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Approximation_de_Pi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="mhJ-aj-wDh">
-                                <rect key="frame" x="262.5" y="125" width="295" height="88"/>
+                                <rect key="frame" x="59.5" y="163" width="295" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcul de la valeur approchée de π" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvA-mZ-WTO">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="22"/>
@@ -79,7 +79,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="nNQ-Gi-EE3">
-                                <rect key="frame" x="235" y="842" width="350" height="243"/>
+                                <rect key="frame" x="32" y="662" width="350" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-4e-aBo">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
@@ -102,13 +102,13 @@
                                         </constraints>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="x1a-Mp-qQN">
-                                        <rect key="frame" x="-2" y="71" width="354" height="31"/>
+                                        <rect key="frame" x="-2" y="48" width="354" height="31"/>
                                         <connections>
                                             <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="9DJ-Sy-cN7"/>
                                         </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Ery-e6-v0D">
-                                        <rect key="frame" x="0.0" y="142" width="350" height="30"/>
+                                        <rect key="frame" x="0.0" y="96" width="350" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valeur approchée de π : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-ST-OI6">
                                                 <rect key="frame" x="0.0" y="0.0" width="310.5" height="30"/>
@@ -128,7 +128,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-ek-PK4">
-                                        <rect key="frame" x="0.0" y="213" width="350" height="30"/>
+                                        <rect key="frame" x="0.0" y="144" width="350" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <state key="normal" title="Calcul"/>
                                         <connections>
@@ -142,7 +142,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="41"/>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI0-Nc-CMZ" customClass="MonteCarloGraph" customModule="Approximation_de_Pi" customModuleProvider="target">
-                                <rect key="frame" x="204.5" y="384.5" width="411" height="411"/>
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Ggn-vG-hE3">
@@ -202,7 +202,7 @@
             <objects>
                 <navigationController id="NAx-eK-0AS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WW3-HR-aJS">
-                        <rect key="frame" x="0.0" y="0.0" width="820" height="102"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -231,7 +231,7 @@
             <objects>
                 <navigationController id="lq4-kS-eUl" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Rap-xp-jQV">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="102"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -247,25 +247,25 @@
             <objects>
                 <viewController id="n2n-OA-Hnr" customClass="TableDataController" customModule="Approximation_de_Pi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GfE-rk-IUo">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="1180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-xS-epP">
-                                <rect key="frame" x="100" y="55" width="320" height="1090"/>
+                                <rect key="frame" x="0.0" y="145" width="414" height="702"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="URc-52-JDQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="966"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="qHI-Yf-lwB" style="IBUITableViewCellStyleDefault" id="Npc-2C-XUM" customClass="CellTableViewCell" customModule="Approximation_de_Pi" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Npc-2C-XUM" id="trc-X4-b5K">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qHI-Yf-lwB">
-                                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -284,10 +284,10 @@
                                         </connections>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-m7-aBh">
-                                        <rect key="frame" x="0.0" y="992" width="320" height="98"/>
+                                        <rect key="frame" x="0.0" y="604" width="414" height="98"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-Tt-A5Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <state key="normal" title="Vue Principale"/>
                                                 <connections>
@@ -295,7 +295,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4v-48-lcH">
-                                                <rect key="frame" x="0.0" y="59" width="320" height="39"/>
+                                                <rect key="frame" x="0.0" y="59" width="414" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <state key="normal" title="Vider la liste">
                                                     <color key="titleColor" systemColor="systemPinkColor"/>
@@ -335,11 +335,11 @@
             <objects>
                 <viewController storyboardIdentifier="RepresentationController" id="6lP-Be-fKd" customClass="RepresentationController" customModule="Approximation_de_Pi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfk-WC-ZL5">
-                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-G1-457">
-                                <rect key="frame" x="260" y="317" width="300" height="73"/>
+                                <rect key="frame" x="57" y="190" width="300" height="73"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-Mb-sjU">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -381,7 +381,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjj-MC-6wm" customClass="MonteCarloGraph" customModule="Approximation_de_Pi" customModuleProvider="target">
-                                <rect key="frame" x="260" y="430" width="300" height="300"/>
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="5aI-H2-0z0"/>
