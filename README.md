@@ -14,8 +14,8 @@ On stock les données dans un fichier .plist et on utilise aussi le UserDefault
 </div>
 
 <div>
-  <img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone4.png" height="500"/>
-  <img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone5.png" height="500"/>
+  <img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone4.png" width="500"/>
+  <img src="https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone5.png" width="500"/>
 </div>
 
 
