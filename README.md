@@ -7,7 +7,7 @@ On stock les données dans un fichier .plist et on utilise aussi le UserDefault
 
 ### iPhone
 
-![ScreenShot](https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone 1.png)
+![ScreenShot](https://raw.github.com/AnthonyPeres/Monte-Carlo/main/Screenshot/iPhone\ 1.png)
 
 ![Screenshot](./Screenshot/iPhone 1.png)
 ![Screenshot](./Screenshot/iPhone 2.png)
