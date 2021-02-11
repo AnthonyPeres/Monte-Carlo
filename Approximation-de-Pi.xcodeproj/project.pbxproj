@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1ADE7925925C1500194204 /* MonteCarloGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1ADE7825925C1500194204 /* MonteCarloGraph.swift */; };
 		DA4D42682590FA580077E986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D42672590FA580077E986 /* AppDelegate.swift */; };
 		DA4D426A2590FA580077E986 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D42692590FA580077E986 /* SceneDelegate.swift */; };
 		DA4D426C2590FA580077E986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D426B2590FA580077E986 /* ViewController.swift */; };
 		DA4D426F2590FA580077E986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4D426D2590FA580077E986 /* Main.storyboard */; };
 		DA4D42712590FA590077E986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4D42702590FA590077E986 /* Assets.xcassets */; };
 		DA4D42742590FA590077E986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4D42722590FA590077E986 /* LaunchScreen.storyboard */; };
-		DA4D427F2590FF270077E986 /* PiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D427E2590FF270077E986 /* PiView.swift */; };
+		DA6902A325D4AAA800DF3F06 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6902A225D4AAA800DF3F06 /* CellTableViewCell.swift */; };
+		DA6902A925D4B0B400DF3F06 /* RepresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6902A825D4B0B400DF3F06 /* RepresentationController.swift */; };
+		DAC1F7AA25C2B6BD003A59F8 /* MonteCarlo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1F7A925C2B6BD003A59F8 /* MonteCarlo.swift */; };
+		DAC1F7AF25C2CFD6003A59F8 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1F7AE25C2CFD6003A59F8 /* Point.swift */; };
+		DAC95B0325C42F45006B9645 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC95B0225C42F45006B9645 /* DataManagement.swift */; };
+		DAF0186225C35979001AB330 /* TableDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF0186125C35979001AB330 /* TableDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA1ADE7825925C1500194204 /* MonteCarloGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarloGraph.swift; sourceTree = "<group>"; };
 		DA4D42642590FA580077E986 /* Approximation-de-Pi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Approximation-de-Pi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4D42672590FA580077E986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4D42692590FA580077E986 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +32,12 @@
 		DA4D42702590FA590077E986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4D42732590FA590077E986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4D42752590FA590077E986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4D427E2590FF270077E986 /* PiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiView.swift; sourceTree = "<group>"; };
+		DA6902A225D4AAA800DF3F06 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		DA6902A825D4B0B400DF3F06 /* RepresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentationController.swift; sourceTree = "<group>"; };
+		DAC1F7A925C2B6BD003A59F8 /* MonteCarlo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarlo.swift; sourceTree = "<group>"; };
+		DAC1F7AE25C2CFD6003A59F8 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		DAC95B0225C42F45006B9645 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		DAF0186125C35979001AB330 /* TableDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,46 @@
 		DA4D42662590FA580077E986 /* Approximation-de-Pi */ = {
 			isa = PBXGroup;
 			children = (
+				DA6902AF25D4C89800DF3F06 /* Model */,
+				DA6902B025D4C89D00DF3F06 /* View */,
+				DA6902AC25D4C88100DF3F06 /* Controller */,
 				DA4D42672590FA580077E986 /* AppDelegate.swift */,
 				DA4D42692590FA580077E986 /* SceneDelegate.swift */,
-				DA4D426B2590FA580077E986 /* ViewController.swift */,
-				DA4D427E2590FF270077E986 /* PiView.swift */,
+				DAC1F7AE25C2CFD6003A59F8 /* Point.swift */,
+				DA6902A225D4AAA800DF3F06 /* CellTableViewCell.swift */,
+				DAC95B0225C42F45006B9645 /* DataManagement.swift */,
 				DA4D426D2590FA580077E986 /* Main.storyboard */,
 				DA4D42702590FA590077E986 /* Assets.xcassets */,
 				DA4D42722590FA590077E986 /* LaunchScreen.storyboard */,
 				DA4D42752590FA590077E986 /* Info.plist */,
 			);
 			path = "Approximation-de-Pi";
+			sourceTree = "<group>";
+		};
+		DA6902AC25D4C88100DF3F06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA4D426B2590FA580077E986 /* ViewController.swift */,
+				DAF0186125C35979001AB330 /* TableDataController.swift */,
+				DA6902A825D4B0B400DF3F06 /* RepresentationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DA6902AF25D4C89800DF3F06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1F7A925C2B6BD003A59F8 /* MonteCarlo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DA6902B025D4C89D00DF3F06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA1ADE7825925C1500194204 /* MonteCarloGraph.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +182,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF0186225C35979001AB330 /* TableDataController.swift in Sources */,
 				DA4D426C2590FA580077E986 /* ViewController.swift in Sources */,
+				DA6902A925D4B0B400DF3F06 /* RepresentationController.swift in Sources */,
 				DA4D42682590FA580077E986 /* AppDelegate.swift in Sources */,
+				DAC1F7AF25C2CFD6003A59F8 /* Point.swift in Sources */,
+				DA1ADE7925925C1500194204 /* MonteCarloGraph.swift in Sources */,
+				DAC1F7AA25C2B6BD003A59F8 /* MonteCarlo.swift in Sources */,
+				DA6902A325D4AAA800DF3F06 /* CellTableViewCell.swift in Sources */,
+				DAC95B0325C42F45006B9645 /* DataManagement.swift in Sources */,
 				DA4D426A2590FA580077E986 /* SceneDelegate.swift in Sources */,
-				DA4D427F2590FF270077E986 /* PiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

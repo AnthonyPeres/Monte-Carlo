@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Point {
+    var x: Int
+    var y: Int
+    var inCircle: Bool
+}
